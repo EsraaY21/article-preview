@@ -1,0 +1,5 @@
+@media (max-width: 1000px) {
+    .card>.text_container {
+        padding: 32px;
+    }
+}
