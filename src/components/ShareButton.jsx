@@ -10,14 +10,14 @@ export default function ShareButton() {
 
   return (
     <button
-      className={`footer_share ${isShareVisible && "button_active"} `}
+      className={`${isShareVisible && "button_active"} `}
       onClick={handleShareClick}
       aria-expanded={isShareVisible}
     >
       <IconShare isShareVisible={isShareVisible} />
 
       {isShareVisible && (
-        <div className="share_icons_container">
+        <div className="tooltip">
           <div className="icons_container">
             <p>Share</p>
             <div className="icons">

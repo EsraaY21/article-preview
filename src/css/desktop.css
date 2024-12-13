@@ -16,16 +16,12 @@ body,
 body {
     height: 100vh;
     width: 100vw;
-}
-
-main {
-    height: 100vh;
-    width: 100vw;
     display: grid;
     place-content: center;
     background-color: var(--blue);
     justify-items: center;
 }
+
 
 .card {
     background-color: var(--white);
@@ -93,7 +89,7 @@ p.date {
     color: var(--text-very-light);
 }
 
-.footer_share {
+button {
     width: 32px;
     height: 32px;
     border-radius: 100%;
@@ -112,12 +108,12 @@ p.date {
     color: white;
 }
 
-.footer_share .share_icon {
+button .share_icon {
     height: 13px;
     width: 15px;
 }
 
-.share_icons_container {
+.tooltip {
     position: absolute;
     transform: translateY(-100%);
     top: -32px;
@@ -156,4 +152,5 @@ p.date {
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
     z-index: -1;
+    opacity: 100%;
 }
