@@ -113,7 +113,7 @@ p.date {
 .share_icons_container {
     position: absolute;
     transform: translateY(-100%);
-    top: -16px;
+    top: -22px;
 }
 
 .icons_container {
@@ -140,11 +140,13 @@ p.date {
 }
 
 .icons_container::after {
-    content: " ";
+    content: "";
     background-color: var(--text-dark);
-    height: 12px;
+    width: 18px;
+    height: 18px;
     position: absolute;
-    width: 24px;
-    background-color: red;
-
+    bottom: -9px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
 }
