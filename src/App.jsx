@@ -1,3 +1,5 @@
+import ShareButton from "./components/ShareButton";
+
 function App() {
   return (
     <main>
@@ -26,24 +28,8 @@ function App() {
                 <p className="date">28 Jun 2020</p>
               </div>
             </div>
-            <button className="footer_share">
-              <img
-                src="/images/icon-share.svg"
-                alt="share"
-                className="share_icon"
-              />
 
-              <div className="share_icons_container">
-                <div className="icons_container">
-                  <p>Share</p>
-                  <div className="icons">
-                    <img src="/images/icon-facebook.svg" alt="facebook" />
-                    <img src="/images/icon-twitter.svg" alt="twitter" />
-                    <img src="/images/icon-pinterest.svg" alt="pinterest" />
-                  </div>
-                </div>
-              </div>
-            </button>
+            <ShareButton />
           </div>
         </div>
       </div>
