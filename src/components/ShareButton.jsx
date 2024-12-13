@@ -10,7 +10,7 @@ export default function ShareButton() {
 
   return (
     <button
-      className={`${isShareVisible && "button_active"} `}
+      className={`${isShareVisible && "button_active"} desktop_button`}
       onClick={handleShareClick}
       aria-expanded={isShareVisible}
     >

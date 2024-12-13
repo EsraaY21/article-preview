@@ -63,10 +63,18 @@ p.desc {
     margin-bottom: 20px;
 }
 
-.footer {
+.mobile_menu {
+    display: none;
+}
+
+.desktop_menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.desktop_menu button {
+    position: relative;
 }
 
 .author {
@@ -97,7 +105,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     outline: none;
     border: none;
     cursor: pointer;
@@ -113,7 +120,7 @@ button .share_icon {
     width: 15px;
 }
 
-.tooltip {
+.desktop_menu .tooltip {
     position: absolute;
     transform: translateY(-100%);
     top: -32px;
